@@ -1,6 +1,8 @@
 # Bmiconsole
-BMI Health Index testing Program for linux Users 
-
-To install Bmiconsole:</br>
- linux@linux~# git clone https://github.com/SadhukhanR/bmiconsole.git
- 
+<pre>
+BMI Health Index testing Program 
+To install Bmiconsole:
+</pre>
+<pre>
+linux@linux~# git clone https://github.com/SadhukhanR/bmiconsole.git
+</pre>
