@@ -1,8 +1,19 @@
 # Bmiconsole
-<pre>
-BMI Health Index testing Program 
-To install Bmiconsole:
-</pre>
-<pre>
-linux@linux~# git clone https://github.com/SadhukhanR/bmiconsole.git
-</pre>
+Health Index Testing For Linux Users
+## Installation
+```bash
+git clone https://github.com/SadhukhanR/bmiconsole.git
+```
+
+## Run
+```sh
+linux@linux~# bmiconsole 
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
