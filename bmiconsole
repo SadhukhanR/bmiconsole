@@ -1,0 +1,11 @@
+#!/bin/bash
+cat /usr/local/bin/bmiconsole.txt
+echo =======================================
+echo Welcome to BMI open Lab 1.0
+echo =======================================
+echo Starting bmiconsole....../
+python3 /usr/local/bin/bmiconsole.py
+echo =======================================
+echo ................End!..................
+echo =======================================
+
