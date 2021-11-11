@@ -3,7 +3,7 @@ Health Index Testing For Linux Users
 ## Installation 
 Before Installing Read Carefully !!
 ### Recommend Python Library :
-To run this program you need some python special library,
+To run this program you need python3 or python3.9 and some special library,
 [Matplotlib](https://matplotlib.org) & [Numpy](https://numpy.org)
 
 ### Steps :
@@ -33,3 +33,7 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+## Project Status
+Stable Version 1.0 :)
+<br>
+Need Devolopement.
