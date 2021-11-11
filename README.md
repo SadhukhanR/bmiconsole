@@ -6,10 +6,10 @@ Before Installing Read Carefully !!
 To run this program you need python3 or python3.9 and some special library,
 [Matplotlib](https://matplotlib.org) & [Numpy](https://numpy.org)
 
-### Steps :
-#### 1. Cloning :
+### Steps
+#### 1. Cloning
      git clone https://github.com/SadhukhanR/bmiconsole.git
-#### 2. Following Commands :
+#### 2. Following Commands
 After cloning run following commands on shell 
         
      cd bmiconsole
