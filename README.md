@@ -2,7 +2,7 @@
 Health Index Testing For Linux Users
 ## Installation 
 Before Installing Read Carefully !!
-### Recommend Python Library :
+### Recommend Python Library
 To run this program you need python3 or python3.9 and some special library,
 [Matplotlib](https://matplotlib.org) & [Numpy](https://numpy.org)
 
