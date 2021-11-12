@@ -34,6 +34,4 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 ## Project Status
-Stable Version 1.0 :)
-<br>
-Need Devolopement.
+Devolopement Stage
