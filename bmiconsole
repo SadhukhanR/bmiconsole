@@ -1,11 +1,12 @@
 #!/bin/bash
-cat /usr/local/bin/bmiconsole.txt
-echo =======================================
-echo Welcome to BMI open Lab 1.0
-echo =======================================
-echo Starting bmiconsole....../
-python3 /usr/local/bin/bmiconsole.py
-echo =======================================
-echo ................End!..................
-echo =======================================
+while [ -n "$1" ]
+do
+        case "$1" in
+                -T )~/.bmiconsole/src/bmi;;
+                -R) ls ~/.bmiconsole/reports/  && cat ~/.bmiconsole/src/recls.txt ;;
 
+                -h) cat ~/.bmiconsole/src/h.txt ;;
+                *)echo "No option set" $1  && echo " -h for know more" ;;
+        esac
+        shift
+done

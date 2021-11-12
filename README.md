@@ -17,14 +17,14 @@ After cloning run following commands on shell
         
 You need to Root permission
     
-    chmod +x bmiconsole ;cp bmiconsole.py /usr/local/bin; cp bmiconsole.txt /usr/local/bin ; cp bmiconsole /usr/local/bin;
+    ./init -i
 
 
 
 ## Run
 To run bmiconsole 
     
-    bmiconsole
+    bmiconsole -T
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
