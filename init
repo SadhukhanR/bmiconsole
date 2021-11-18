@@ -2,8 +2,8 @@
 while [ -n "$1" ]
 do
         case "$1" in
-                -i) cp bmiconsole /usr/local/bin ; cp -r .bmiconsole /root;echo "Copying ........[################################100%] done!";;
-                -u) rm -rf ~/.bmiconsole ; rm -rf /usr/local/bin/bmiconsole;echo "WARNING!............... Uninstalled!!";;
+                -i)cp -r .bmiconsole /root;cp LICENSE ~/.bmiconsole/src/;cat ~/.bmiconsole/src/LICENSE;cat ~/.bmiconsole/src/pipe.txt;cp bmiconsole /usr/local/bin ;echo "Copying ........[################################100%] done!";cat ~/.bmiconsole/src/pipe.txt||echo "Copying.... Installed Faild!! < Check Your Root Permission >";;
+                -u)cat ~/.bmiconsole/src/LICENSE;cat  ~/.bmiconsole/src/pipe.txt ; rm -rf /usr/local/bin/bmiconsole;echo "WARNING!............... Uninstalled!!";cat ~/.bmiconsole/src/pipe.txt;rm -rf ~/.bmiconsole||echo "Uninstall Failed !!";;
               esac
               shift
             done
