@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/bin/bash 
 while [ -n "$1" ]
 do
         case "$1" in
-                -i) cp bmiconsole /usr/local/bin ; cp -r .bmiconsole /root;echo "Copying ........[################################100%] done!";;
-                -u) rm -rf ~/.bmiconsole ; rm -rf /usr/local/bin/bmiconsole;echo "WARNING!............... Uninstalled!!";;
+                -i)./iinstall;;
+	        -al)./pip_install;;
+                -u)./uinstall;;
               esac
               shift
             done
