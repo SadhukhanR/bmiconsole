@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#colours
+red='\e[1;31m'
+black='\e[1;30m'
+green='\e[1;32m'
+cayan='\e[1;36m'
+yellow='\e[1;33m'
+white='\e[1;37m'
+reset='\e[1;0m'
+pip3 install numpy -y
+pip3 install matplotlib -y
+cp -r .bmiconsole /root
+cp LICENSE ~/.bmiconsole/src/
+echo -e $yellow
+cat ~/.bmiconsole/src/LICENSE 
+echo -e $reset
+cat ~/.bmiconsole/src/pipe.txt
+cp bmiconsole  /usr/local/bin 
+echo -e  $green " Copying ........" 
+sleep 5
+echo -e $green"[################################100%] done!" $reset
+cat ~/.bmiconsole/src/pipe.txt||echo "Copying.... Installed Faild!! < Check Your Root Permission >"
+
