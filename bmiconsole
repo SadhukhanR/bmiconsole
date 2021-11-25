@@ -3,11 +3,10 @@
 while [ -n "$1" ]
 do
         case "$1" in
-                -T )~/.bmiconsole/src/bmi;;
-                -R) ls ~/.bmiconsole/reports/  && cat ~/.bmiconsole/src/recls.txt ;;
-
-                -h) cat ~/.bmiconsole/src/h.txt ;;
+                -T )usr/local/bin/.bmiconsole/src/bmi;;
+                -h) cat /usr/local/bin/.bmiconsole/src/help.txt ;;
                 *)echo "No option set" $1  && echo " -h for know more" ;;
         esac
         shift
-done
+done 
+
