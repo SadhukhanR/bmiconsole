@@ -21,6 +21,7 @@ wget  https://raw.githubusercontent.com/SadhukhanR/bmiconsole/main/bmi
 echo -e $cayan
 cat main.txt
 chmod +x bmiconsole
+chmod +x bmi
 sleep 5
 echo -e $yellow
 echo "========================================================"
