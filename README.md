@@ -19,44 +19,21 @@ Health Index Testing For Linux Users
 
 </pre>
 ## Installation 
-Before Installing Read Carefully !!
-### Recommend Python Library
-To run this program you need python3 or python3.9 and some special library,
-[Matplotlib](https://matplotlib.org) & [Numpy](https://numpy.org)
-### Install Python
-For Numpy
+To run this program you need python3 or python3.9
+
+<br>
+Installing bimconsole is very easy just download installer.sh file
+<a href="https://raw.githubusercontent.com/SadhukhanR/bmiconsole/main/installer.sh">Download</a>
+And Copy this file in Root Dir [Root Needed] and paste command below 
 
 
 
-          pip3 install numpy
-
-
-For Matplotlib 
-
-
-          pip3 install matplotlib
-
-     
-
-### Steps
-
-#### 1. Cloning
-     git clone https://github.com/SadhukhanR/bmiconsole.git
-#### 2. Following Commands
-After cloning run following commands on shell 
-        
-        cd bmiconsole
-        
-        
-Installation Command
-
-    
-       su;./init -i
-
+ 
+                chmod +x installer.sh;./installer.sh
 
 
 ## Run
-To run bmiconsole ( Root needed )
+To run bmiconsole
     
     bmiconsole -T
 
