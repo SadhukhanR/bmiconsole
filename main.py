@@ -1,183 +1,79 @@
-# This is a demo project
-# R Sadhukhan
+# sadhukhanr; this is a demp project
 # bmi labs
+from turtle import color
 import numpy as np
 import matplotlib.pyplot as plt
-#info gatt
-x = input('Enter Your Name :/>')
-y =eval(input('Enter Your Age:/>'))
-a = eval(input('Enter Your Weight in kg:/>'))
-b = eval(input('Enter Your Height in ft:/>'))
-#calculation
-c = b*0.3048
-d = a/c**2
-#looping
-#result
-print("calculating bmi index ...............")
-print("=====================================")
-print("RESULT !!!")
-print("***********")
-print("Your Name:",x)
-print("Your Age:",y)
-print("Your Weight:",a,"kg")
-print("Your Height:",b,"ft")
-print("Your Bmi Index =",d)
-l = np.linspace(1,d,100)
-m = np.linspace(1,a,100)
-n = np.exp(l)
-print("******************")
-if d < 18.5 :
-    print("You Are Underweight !!!")
-    print("BMI Labs Remark !!!")
-    print("possible nutritional deficiency and osteoporosis")
-    print("=================================")
-    print("Genarating Graphs !!!")
-    plt.subplot(211)
-    plt.title('You Are Underweight!!!',color='r',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('Weight->',size=10)
-    plt.ylabel('BMI index->',size=10)
-    plt.plot(m,l,color='r',lw=2)
-    plt.grid()
-    plt.show()
-    plt.subplot(212)
-    plt.title('You Are Underweight!!!',color='r',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('BMI->',size=10)
-    plt.ylabel('exp BMI->',size=10)
-    plt.plot(l,n,color='r',lw=2)
-    plt.grid()
-    plt.show()
-    your = (d,d)
-    und = (18.5,18.5)
-    nor = (22.9,22.9)
-    mov = (27.4,27.4)
-    ove = (40,40)
-    z = np.arange(len(und))
-    bar_width = 0.1
-    q = z+0.1
-    plt.xlim(0,3)
-    plt.bar(z+bar_width,your,bar_width,label='Your BMI Index',color='r')
-    plt.bar(q+2*bar_width,und,bar_width,label='Underweight',color='r')
-    plt.bar(q+3*bar_width,nor,bar_width,label='Normal BMI',color='g')
-    plt.bar(q+4*bar_width,mov,bar_width,label='Mild Overweight',color='y')
-    plt.bar(q+5*bar_width,ove,bar_width,label='Overweight',color='r')
-    plt.legend()
-    plt.show()
-if 18.5 < d < 22.9 :
-    print("Normal BMI")
-    print("BMI Labs Remark !!!")
-    print("LOW RISK !")
-    print("=================================")
-    print("Genarating Graphs !!!")
-    plt.subplot(211)
-    plt.title('Normal BMI',color='g',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('Weight->',size=10)
-    plt.ylabel('BMI index->',size=10)
-    plt.plot(m,l,color='g',lw=2)
-    plt.grid()
-    plt.show()
-    plt.subplot(212)
-    plt.title('Normal BMI',color='g',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('BMI->',size=10)
-    plt.ylabel('exp BMI->',size=10)
-    plt.plot(l,n,color='g',lw=2)
-    plt.grid()
-    plt.show()
-    your = (d,d)
-    und = (18.5,18.5)
-    nor = (22.9,22.9)
-    mov = (27.4,27.4)
-    ove = (40,40)
-    z = np.arange(len(und))
-    bar_width = 0.1
-    q = z+0.1
-    plt.xlim(0,3)
-    plt.bar(z+bar_width,your,bar_width,label='Your BMI Index',color='g')
-    plt.bar(q+2*bar_width,und,bar_width,label='Underweight',color='r')
-    plt.bar(q+3*bar_width,nor,bar_width,label='Normal BMI',color='g')
-    plt.bar(q+4*bar_width,mov,bar_width,label='Mild Overweight',color='y')
-    plt.bar(q+5*bar_width,ove,bar_width,label='Overweight',color='r')
-    plt.legend()
-    plt.show()
-if 23.0 < d < 27.4 :
-    print("You Are Mild to moderate overwright!!")
-    print("BMI Labs Remark !!!")
-    print("Heart disease ,High blood pressuere, stroke, Diabetes Mellitus")
-    print("=================================")
-    print("Genarating Graphs !!!")
-    plt.subplot(211)
-    plt.title('You Are Mild Overweight!!',color='y',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('Weight->',size=10)
-    plt.ylabel('BMI index->',size=10)
-    plt.plot(m,l,color='y',lw=2)
-    plt.grid()
-    plt.show()
-    plt.subplot(212)
-    plt.title('You Are Mild Overweight!!',color='y',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('BMI->',size=10)
-    plt.ylabel('exp BMI->',size=10)
-    plt.plot(l,n,color='y',lw=2)
-    plt.grid()
-    plt.show()
-    your = (d,d)
-    und = (18.5,18.5)
-    nor = (22.9,22.9)
-    mov = (27.4,27.4)
-    ove = (40,40)
-    z = np.arange(len(und))
-    bar_width = 0.1
-    q = z+0.1
-    plt.xlim(0,3)
-    plt.bar(z+bar_width,your,bar_width,label='Your BMI Index',color='y')
-    plt.bar(q+2*bar_width,und,bar_width,label='Underweight',color='r')
-    plt.bar(q+3*bar_width,nor,bar_width,label='Normal BMI',color='g')
-    plt.bar(q+4*bar_width,mov,bar_width,label='Mild Overweight',color='y')
-    plt.bar(q+5*bar_width,ove,bar_width,label='Overweight',color='r')
-    plt.legend()
-    plt.show()
-if d >= 27.5 :
-    print("You Are Very Overweight or Obese !!!")
-    print("BMI Labs Remark !!!")
-    print("High risk of devoloping heart disease, High blood presure, Stroke,Diabetes Mellitus, Metabolic syndrome")
-    print("=================================")
-    print("Genarating Graphs !!!")
-    plt.subplot(211)
-    plt.title('You Are very Overweight!!!',color='r',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('Weight->',size=10)
-    plt.ylabel('BMI index->',size=10)
-    plt.plot(m,l,color='r',lw=2)
-    plt.grid()
-    plt.show()
-    plt.subplot(212)
-    plt.title('You Are very Overweight!!!',color='r',size=10)
-    plt.suptitle('BMI Index Graph',color='g',size=20)
-    plt.xlabel('BMI->',size=10)
-    plt.ylabel('exp BMI->',size=10)
-    plt.plot(l,n,color='r',lw=2)
-    plt.grid()
-    plt.show()
-    your = (d,d)
-    und = (18.5,18.5)
-    nor = (22.9,22.9)
-    mov = (27.4,27.4)
-    ove = (40,40)
-    z = np.arange(len(und))
-    bar_width = 0.1
-    q = z+0.1
-    plt.xlim(0,3)
-    plt.bar(z+bar_width,your,bar_width,label='Your BMI Index',color='r')
-    plt.bar(q+2*bar_width,und,bar_width,label='Underweight',color='r')
-    plt.bar(q+3*bar_width,nor,bar_width,label='Normal BMI',color='g')
-    plt.bar(q+4*bar_width,mov,bar_width,label='Mild Overweight',color='y')
-    plt.bar(q+5*bar_width,ove,bar_width,label='Overweight',color='r')
-    plt.legend()
-    plt.show()
 
+inputs = [
+    "Your Name:",
+    "Your Age:",
+    "Your Weight in kg:",
+    "Your Height in ft:",
+    "Your Bmi index:"
+]
 
+bmi_labs = [
+    "You're under weight",
+    "You've normal bmi index",
+    "You're re mild to moderate overwright",
+    "You're very overweight or obese"
+]
+symp = [
+    "possible nutritional deficiency and osteoporosis",
+    "no symptoms",
+    "Heart disease ,High blood pressuere, stroke, Diabetes Mellitus",
+    "High risk of devoloping heart disease, High blood presure, Stroke,Diabetes Mellitus, Metabolic syndrome"
+]
 
+colors = [
+    "r",
+    "g",
+    "y",
+    "r",
+    "b"
+]
+
+x = input(inputs[0])
+y = eval(input(inputs[1]))
+a = eval(input(inputs[2]))
+b = eval(input(inputs[3]))
+
+height = b*0.3048
+bmi = a/(height**2)
+
+if bmi < 18.5:
+    i = 0
+if 18.5 < bmi < 22.9:
+    i = 1
+if 23.0 < bmi < 27.4:
+    i = 2
+if bmi >= 27.5:
+    i = 3
+
+data = [
+    x,
+    y,
+    a,
+    b,
+    bmi
+]
+
+graph_base = [
+    18.5,
+    22.9,
+    27.4,
+    bmi
+]
+
+graph_base_main = sorted(graph_base)
+base0 = [1, 2, 3, 4]
+
+print('========================================')
+for n in range(5):
+    print(inputs[n], data[n])
+print("Bmi Status:", bmi_labs[i])
+print("Symptoms:", symp[i])
+for k in range(4):
+    plt.axhline(y = graph_base_main[k])
+plt.grid(color='gray')
+plt.show()
