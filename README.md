@@ -1,8 +1,6 @@
-# Bmiconsole
-Health Index Testing For Linux Users
-<br>
-<pre>
+# bmiconsole
 
+```
 ======================================================================
 
  2456762       546         657      6565786567   1111     00000000
@@ -16,33 +14,31 @@ Health Index Testing For Linux Users
  5446546       78           09       457577687    1111 89 00000000
 
  ======================================================================
+```
 
-</pre>
-## Installation 
+## installation
 To run this program you need python3 or python3.9
 
-<br>
-Installing bimconsole is very easy just download installer.sh file
-<a href="https://raw.githubusercontent.com/SadhukhanR/bmiconsole/main/installer.sh">Download</a>
-And Copy this file in Root Dir [Root Needed] and paste command below 
+1. download installer [installer.sh](https://raw.githubusercontent.com/SadhukhanR/bmiconsole/main/installer.sh)
+2. copy installer.sh into root dir [root needed]
+3. run command bellow
 
+```sh
+chmod +x installer.sh;./installer.sh
+```
+## run 
 
+```
+bmi
+```
+## contributing
+```
+pull requests are welcome! for major changes, please open an issue first to discuss what you would like to change.
+please make sure to update tests as appropriate.
+```
+## license
 
- 
-                chmod +x installer.sh;./installer.sh
+[mit license](./LICENSE)
 
-
-## Run
-To run bmiconsole
-    
-    bmi
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-## Project Status
-Devolopement Stage
+## project status
+developement
