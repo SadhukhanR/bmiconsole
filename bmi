@@ -12,7 +12,7 @@ echo -e $yellow
 cat /usr/local/bin/.bmiconsole/src/main.txt
 echo -e $cayan
 echo =========================================
-echo  "Hi" $LOGNAME "Welcome to BMI Open Lab 1.0"
+echo  "Hi" $LOGNAME "Welcome to BMI Open Labs 2.0"
 echo =========================================
 echo -e $red
 python3 /usr/local/bin/.bmiconsole/src/main.py
